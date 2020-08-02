@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Тестовое задание для R&B Afla Group</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="scripts.js"> </script> 	
+</head>
+<body>
+	<div class="licenseWindow">
+				<div class="choiceLicense">
+					<div class="choices">
+						<input id="radio_1" type="radio" name="radio" value="13" onclick="getValueLicense(this.value, 1)" checked></input>
+						<span class="chek"></span> 
+						<label for="radio_1" class="licenceName">license plan#1</label>
+						<p>$13 per license</p>
+					</div>
+					<div class="choices">
+						<input id="radio_2" type="radio" name="radio" value="22" onclick="getValueLicense(this.value, 2)"></input>
+						<span class="chek"></span> 
+						<label for="radio_2" class="licenceName">license plan#2</label>
+						<p>$22 per license</p>
+					</div>
+					<div class="choices">
+
+						<input id="radio_3" type="radio" name="radio" value="34" onclick="getValueLicense(this.value, 3)"></input>
+						<span class="chek"></span> 
+						<label for="radio_3" class="licenceName">license plan#3</label>
+						<p>$34 per license</p>
+					</div>
+				</div>
+				<div class="numberLicense">
+					 <p>Number of licenses:</p>
+					 <select id="sel" onclick="getNumberLicense ()">
+					 	<option value="1">1</option>
+					 	<option value="2">2</option>
+					 	<option value="3">3</option>
+					 	<option value="4">4</option>
+					 	<option value="5">5</option>
+					 	<option value="6">6</option>
+					 	<option value="7">7</option>
+					 	<option value="8">8</option>
+					 	<option value="9">9</option>
+					 	<option value="10">10</option>
+					 </select>
+				</div>
+				<div class="buyLicense">
+					<div class="totalBlock">
+					    <p class="totalText">total:</p>
+					    <p class="total"><span>$</span><span id="totalScore">13</span><span class="upUS">US</span></p>
+					</div>
+					<div class="buyBlock">
+							<div class="link" onclick="outTotal()">
+								<p class="linkText">buy now</p>
+							</div>
+					</div>
+					<div class="yourChoose">
+						<p class="yourChooseText">Selected plan: <span id="plan">#1</span></p>
+					</div>
+				</div>
+		</div>
+					
+   <script> let divBlocks = document.getElementsByClassName('choices');
+   divBlocks[0].classList.add("choicesLight");</script>
+
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
